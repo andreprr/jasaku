@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Jasaku - Platform Jasa Serba Ada | Tukang AC, Bangunan, Service</title>
+    <title>AYA - All Your Assistance | Platform Jasa Serba Ada</title>
     <!-- Font Awesome 6 (free icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -38,6 +41,7 @@
             flex-wrap: wrap;
             gap: 20px;
         }
+
         .logo {
             font-size: 28px;
             font-weight: 800;
@@ -45,22 +49,34 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+            letter-spacing: -0.5px;
         }
+
+        .logo span {
+            background: none;
+            color: #f97316;
+            -webkit-background-clip: unset;
+            background-clip: unset;
+        }
+
         .nav-links {
             display: flex;
             gap: 32px;
             align-items: center;
             flex-wrap: wrap;
         }
+
         .nav-links a {
             text-decoration: none;
             font-weight: 500;
             color: #374151;
             transition: 0.2s;
         }
+
         .nav-links a:hover {
             color: #f97316;
         }
+
         .btn-outline {
             border: 2px solid #f97316;
             background: transparent;
@@ -71,10 +87,12 @@
             transition: 0.2s;
             cursor: pointer;
         }
+
         .btn-outline:hover {
             background: #f97316;
             color: white;
         }
+
         .btn-primary {
             background: #f97316;
             border: none;
@@ -84,8 +102,9 @@
             color: white;
             cursor: pointer;
             transition: 0.2s;
-            box-shadow: 0 4px 6px rgba(249,115,22,0.2);
+            box-shadow: 0 4px 6px rgba(249, 115, 22, 0.2);
         }
+
         .btn-primary:hover {
             background: #ea580c;
             transform: translateY(-2px);
@@ -100,86 +119,101 @@
             gap: 40px;
             padding: 60px 0 40px;
         }
+
         .hero-text {
             flex: 1;
         }
+
         .hero-text h1 {
             font-size: 48px;
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 20px;
         }
+
         .hero-text .highlight {
             color: #f97316;
         }
+
         .hero-text p {
             font-size: 18px;
             color: #4b5563;
             margin-bottom: 32px;
             max-width: 550px;
         }
+
         .hero-buttons {
             display: flex;
             gap: 16px;
             flex-wrap: wrap;
         }
+
         .hero-image {
             flex: 1;
             text-align: center;
         }
+
         .hero-image img {
             max-width: 100%;
             border-radius: 32px;
-            box-shadow: 0 20px 35px -10px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.1);
         }
 
         /* categories */
         .section {
             padding: 70px 0;
         }
+
         .section-title {
             text-align: center;
             font-size: 34px;
             font-weight: 800;
             margin-bottom: 16px;
         }
+
         .section-sub {
             text-align: center;
             color: #6b7280;
             margin-bottom: 48px;
         }
+
         .categories-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 28px;
         }
+
         .category-card {
             background: white;
             padding: 28px 16px;
             text-align: center;
             border-radius: 28px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
             transition: all 0.25s;
             border: 1px solid #f3f4f6;
             cursor: default;
         }
+
         .category-card i {
             font-size: 48px;
             color: #f97316;
             margin-bottom: 16px;
         }
+
         .category-card h3 {
             font-weight: 700;
             margin-bottom: 8px;
         }
+
         .category-card p {
             font-size: 13px;
             color: #6b7280;
         }
+
         .category-card:hover {
             transform: translateY(-6px);
             border-color: #fed7aa;
-            box-shadow: 0 20px 30px -12px rgba(249,115,22,0.15);
+            box-shadow: 0 20px 30px -12px rgba(249, 115, 22, 0.15);
         }
 
         /* fitur utama */
@@ -189,6 +223,7 @@
             gap: 32px;
             margin-top: 20px;
         }
+
         .feature-card {
             background: white;
             border-radius: 28px;
@@ -196,6 +231,7 @@
             border: 1px solid #f3f4f6;
             transition: 0.2s;
         }
+
         .feature-card i {
             font-size: 40px;
             background: #fff7ed;
@@ -204,9 +240,11 @@
             color: #f97316;
             margin-bottom: 20px;
         }
+
         .feature-card h3 {
             margin-bottom: 12px;
         }
+
         .role-badge {
             display: inline-block;
             background: #fee2e2;
@@ -226,6 +264,7 @@
             padding: 40px 32px;
             margin-top: 20px;
         }
+
         .role-row {
             display: flex;
             flex-wrap: wrap;
@@ -233,6 +272,7 @@
             gap: 20px;
             margin: 30px 0;
         }
+
         .role-col {
             background: #1f2937;
             border-radius: 28px;
@@ -240,15 +280,18 @@
             flex: 1;
             min-width: 200px;
         }
+
         .role-col h4 {
             font-size: 22px;
             margin-bottom: 16px;
             border-left: 4px solid #f97316;
             padding-left: 12px;
         }
+
         .role-col ul {
             list-style: none;
         }
+
         .role-col li {
             margin-bottom: 12px;
             font-size: 14px;
@@ -256,6 +299,7 @@
             align-items: center;
             gap: 10px;
         }
+
         .role-col i {
             color: #f97316;
             width: 20px;
@@ -268,10 +312,12 @@
             padding: 56px 32px;
             text-align: center;
         }
+
         .cta h2 {
             font-size: 32px;
             margin-bottom: 16px;
         }
+
         .cta .btn-primary {
             margin-top: 20px;
             font-size: 18px;
@@ -290,137 +336,203 @@
             .hero-text h1 {
                 font-size: 36px;
             }
+
             .navbar {
                 flex-direction: column;
             }
         }
     </style>
 </head>
+
 <body>
 
-<nav class="container">
-    <div class="navbar">
-        <div class="logo"><i class="fas fa-tools"></i> Jasaku.id</div>
-        <div class="nav-links">
-            <a href="#">Beranda</a>
-            <a href="#fitur">Fitur</a>
-            <a href="#kategori">Layanan</a>
-            <a href="#usecase">Sistem</a>
-            <button class="btn-outline" id="demoLoginBtn">Demo Masuk</button>
-            <button class="btn-primary" id="registerBtn">Daftar Sekarang</button>
-        </div>
-    </div>
-</nav>
-
-<main>
-    <!-- Hero -->
-    <div class="container">
-        <div class="hero">
-            <div class="hero-text">
-                <h1>Temukan <span class="highlight">Jasa Terpercaya</span><br> AC, Bangunan, Service Apapun</h1>
-                <p>Platform #1 di Indonesia untuk memesan jasa tukang profesional. Dari perbaikan AC hingga renovasi rumah — mudah, aman, dan cepat.</p>
-                <div class="hero-buttons">
-                    <button class="btn-primary" id="heroOrderBtn"><i class="fas fa-search"></i> Cari Jasa</button>
-                    <button class="btn-outline" id="heroJualBtn">Jadi Penyedia Jasa →</button>
-                </div>
-                <div style="margin-top: 24px; font-size: 14px; color: #4b5563;">
-                    <i class="fas fa-check-circle" style="color:#f97316;"></i> 500+ teknisi terverifikasi
-                    <i class="fas fa-check-circle" style="color:#f97316; margin-left: 16px;"></i> Garansi kepuasan
-                </div>
-            </div>
-            <div class="hero-image">
-                <!-- placeholder ilustrasi (icon/svg friendly) -->
-                <div style="background: #ffedd5; border-radius: 32px; padding: 20px;">
-                    <i class="fas fa-hard-hat" style="font-size: 120px; color:#f97316;"></i>
-                    <i class="fas fa-wrench" style="font-size: 90px; color:#ea580c; margin-left: 10px;"></i>
-                    <i class="fas fa-fan" style="font-size: 100px; color:#f97316;"></i>
-                    <p style="margin-top: 12px;">⭐ 4.9 dari 2.500+ ulasan</p>
-                </div>
+    <nav class="container">
+        <div class="navbar">
+            <div class="logo"><i class="fas fa-hands-helping"></i> AYA<span>.</span></div>
+            <div class="nav-links">
+                <a href="#">Beranda</a>
+                <a href="#fitur">Fitur</a>
+                <a href="#kategori">Layanan</a>
+                <a href="#usecase">Sistem</a>
+                <button class="btn-outline" id="demoLoginBtn">Demo Masuk</button>
+                <button class="btn-primary" id="registerBtn">Daftar Sekarang</button>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Kategori Jasa -->
-    <div class="container" id="kategori">
-        <div class="section">
-            <div class="section-title">🔧 Layanan Populer</div>
-            <div class="section-sub">Pilih keahlian yang kamu butuhkan, teknisi siap datang</div>
-            <div class="categories-grid">
-                <div class="category-card"><i class="fas fa-wind"></i><h3>Service AC</h3><p>Tambah freon, bongkar pasang</p></div>
-                <div class="category-card"><i class="fas fa-hard-hat"></i><h3>Tukang Bangunan</h3><p>Renovasi, plester, pasang keramik</p></div>
-                <div class="category-card"><i class="fas fa-plug"></i><h3>Listrik</h3><p>Instalasi, perbaikan stop kontak</p></div>
-                <div class="category-card"><i class="fas fa-tv"></i><h3>Elektronik</h3><p>TV, kulkas, mesin cuci</p></div>
-                <div class="category-card"><i class="fas fa-paint-roller"></i><h3>Pengecatan</h3><p>Dinding rumah, pagar</p></div>
-                <div class="category-card"><i class="fas fa-wrench"></i><h3>Service Lainnya</h3><p>Komputer, pompa air, dll</p></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Fitur Multi Role (Admin, Penjual, Pembeli) -->
-    <div class="container" id="fitur">
-        <div class="section">
-            <div class="section-title">🏢 Ekosistem Lengkap 3 Role</div>
-            <div class="section-sub">Seperti Shopee tapi khusus jasa. Admin, Penjual & Pembeli dalam satu platform</div>
-            <div class="features-grid">
-                <div class="feature-card"><i class="fas fa-shopping-cart"></i><div class="role-badge">PEMBELI</div><h3>Pesan Jasa Mudah</h3><p>Cari, booking jadwal, bayar via transfer/COD, chat realtime, kasih rating & ulasan.</p></div>
-                <div class="feature-card"><i class="fas fa-store"></i><div class="role-badge">PENJUAL</div><h3>Kelola Layanan</h3><p>Posting jasa, atur jadwal, terima pesanan, tarik saldo, lihat pendapatan.</p></div>
-                <div class="feature-card"><i class="fas fa-user-shield"></i><div class="role-badge">ADMIN</div><h3>Kontrol Penuh</h3><p>Verifikasi penjual, atur komisi, tangani dispute, laporan bulanan & statistik.</p></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Use case visual ringkas + diagram sederhana -->
-    <div class="container" id="usecase">
-        <div class="section">
-            <div class="section-title">📋 Use Case Kompleks Siap Eksekusi</div>
-            <div class="usecase-simple">
-                <div class="role-row">
-                    <div class="role-col"><h4>🛒 Pembeli</h4><ul><li><i class="fas fa-check-circle"></i> Register / Login</li><li><i class="fas fa-check-circle"></i> Filter & sort jasa</li><li><i class="fas fa-check-circle"></i> Booking & bayar</li><li><i class="fas fa-check-circle"></i> Chat & review</li><li><i class="fas fa-check-circle"></i> Laporkan masalah</li></ul></div>
-                    <div class="role-col"><h4>🔨 Penjual</h4><ul><li><i class="fas fa-check-circle"></i> Verifikasi KTP/Sertifikat</li><li><i class="fas fa-check-circle"></i> Kelola jadwal & harga</li><li><i class="fas fa-check-circle"></i> Konfirmasi pesanan</li><li><i class="fas fa-check-circle"></i> Update status pekerjaan</li><li><i class="fas fa-check-circle"></i> Tarik komisi</li></ul></div>
-                    <div class="role-col"><h4>👑 Admin</h4><ul><li><i class="fas fa-check-circle"></i> Verifikasi penjual</li><li><i class="fas fa-check-circle"></i> Blokir pengguna</li><li><i class="fas fa-check-circle"></i> Sengketa & refund</li><li><i class="fas fa-check-circle"></i> Atur komisi (5-10%)</li><li><i class="fas fa-check-circle"></i> Dashboard realtime</li></ul></div>
+    <main>
+        <!-- Hero -->
+        <div class="container">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1><span class="highlight">All Your Assistance</span><br> Satu Platform untuk Semua Jasa</h1>
+                    <p>AYA menghubungkan Anda dengan teknisi terpercaya: AC, bangunan, listrik, service apapun. Cepat,
+                        aman, dan terverifikasi.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" id="heroOrderBtn"><i class="fas fa-search"></i> Cari Jasa</button>
+                        <button class="btn-outline" id="heroJualBtn">Jadi Mitra Penyedia →</button>
+                    </div>
+                    <div style="margin-top: 24px; font-size: 14px; color: #4b5563;">
+                        <i class="fas fa-check-circle" style="color:#f97316;"></i> 750+ teknisi terverifikasi
+                        <i class="fas fa-check-circle" style="color:#f97316; margin-left: 16px;"></i> Garansi 100% puas
+                    </div>
                 </div>
-                <div style="text-align: center; margin-top: 20px; font-size: 14px; background:#0f172a; padding: 16px; border-radius: 28px;">
-                    <i class="fas fa-diagram-project"></i> Lengkap dengan Sequence & Activity Diagram (PlantUML ready)
+                <div class="hero-image">
+                    <div style="background: #ffedd5; border-radius: 32px; padding: 20px;">
+                        <i class="fas fa-hard-hat" style="font-size: 120px; color:#f97316;"></i>
+                        <i class="fas fa-wrench" style="font-size: 90px; color:#ea580c; margin-left: 10px;"></i>
+                        <i class="fas fa-fan" style="font-size: 100px; color:#f97316;"></i>
+                        <p style="margin-top: 12px;">⭐ 4.9 dari 3.200+ ulasan</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- CTA -->
-    <div class="container">
-        <div class="cta">
-            <h2>Siap digitalisasi bisnis jasa Anda?</h2>
-            <p>Bergabunglah sebagai penyedia jasa atau temukan teknisi terbaik di kotamu.</p>
-            <button class="btn-primary" id="investorCta"><i class="fas fa-chart-line"></i> Presentasi untuk Investor →</button>
-            <p style="margin-top: 20px; font-size: 13px;">✅ Sudah siap MVP | ✅ Use case kompleks | ✅ Sistem dispute & multi-role</p>
+        <!-- Kategori Jasa -->
+        <div class="container" id="kategori">
+            <div class="section">
+                <div class="section-title">🔧 Layanan Unggulan AYA</div>
+                <div class="section-sub">Pilih keahlian, teknisi siap datang ke rumah atau kantor Anda</div>
+                <div class="categories-grid">
+                    <div class="category-card"><i class="fas fa-wind"></i>
+                        <h3>Service AC</h3>
+                        <p>Tambah freon, bongkar pasang</p>
+                    </div>
+                    <div class="category-card"><i class="fas fa-hard-hat"></i>
+                        <h3>Tukang Bangunan</h3>
+                        <p>Renovasi, plester, pasang keramik</p>
+                    </div>
+                    <div class="category-card"><i class="fas fa-plug"></i>
+                        <h3>Listrik</h3>
+                        <p>Instalasi, perbaikan stop kontak</p>
+                    </div>
+                    <div class="category-card"><i class="fas fa-tv"></i>
+                        <h3>Elektronik</h3>
+                        <p>TV, kulkas, mesin cuci</p>
+                    </div>
+                    <div class="category-card"><i class="fas fa-paint-roller"></i>
+                        <h3>Pengecatan</h3>
+                        <p>Dinding rumah, pagar</p>
+                    </div>
+                    <div class="category-card"><i class="fas fa-wrench"></i>
+                        <h3>Service Lainnya</h3>
+                        <p>Komputer, pompa air, dll</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</main>
 
-<footer>
-    <div class="container">
-        <p>&copy; 2026 Jasaku.id — Platform Jasa Terintegrasi (Admin, Penjual, Pembeli) | <i class="fas fa-code"></i> Ready for development</p>
-    </div>
-</footer>
+        <!-- Fitur Multi Role (Admin, Penjual, Pembeli) -->
+        <div class="container" id="fitur">
+            <div class="section">
+                <div class="section-title">🏢 Ekosistem Lengkap 3 Role</div>
+                <div class="section-sub">Seperti marketplace terbesar tapi khusus jasa. Admin, Mitra & Pelanggan dalam
+                    satu platform</div>
+                <div class="features-grid">
+                    <div class="feature-card"><i class="fas fa-shopping-cart"></i>
+                        <div class="role-badge">PELANGGAN</div>
+                        <h3>Pesan Jasa Mudah</h3>
+                        <p>Cari, booking jadwal, bayar via transfer/COD, chat realtime, kasih rating & ulasan.</p>
+                    </div>
+                    <div class="feature-card"><i class="fas fa-store"></i>
+                        <div class="role-badge">MITRA (PENJUAL)</div>
+                        <h3>Kelola Layanan</h3>
+                        <p>Posting jasa, atur jadwal, terima pesanan, tarik saldo, lihat pendapatan.</p>
+                    </div>
+                    <div class="feature-card"><i class="fas fa-user-shield"></i>
+                        <div class="role-badge">ADMIN AYA</div>
+                        <h3>Kontrol Penuh</h3>
+                        <p>Verifikasi mitra, atur komisi, tangani dispute, laporan bulanan & statistik.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<!-- JS untuk demo alert / simulasi -->
-<script>
-    document.getElementById('demoLoginBtn')?.addEventListener('click', () => {
-        alert("🚀 Demo role:\n\n🔹 Pembeli: login sebagai user@pembeli.com\n🔹 Penjual: login sebagai tukang@ac.id\n🔹 Admin: login sebagai admin@jasaku.id\n\n(Silakan lanjut ke development penuh untuk implementasi auth)");
-    });
-    document.getElementById('registerBtn')?.addEventListener('click', () => {
-        alert("📝 Halaman pendaftaran multi-role (Pembeli / Penjual Jasa) siap dibangun.\n✅ Use case sudah terdefinisi lengkap.");
-    });
-    document.getElementById('heroOrderBtn')?.addEventListener('click', () => {
-        alert("🔍 Fitur pencarian jasa: filter kategori, lokasi terdekat, rating, harga. \n(Integrasi maps & payment gateway ready di tahap dev)");
-    });
-    document.getElementById('heroJualBtn')?.addEventListener('click', () => {
-        alert("🧑‍🔧 Menjadi penjual jasa: upload layanan, atur jadwal, verifikasi dokumen. Komisi transparan.");
-    });
-    document.getElementById('investorCta')?.addEventListener('click', () => {
-        alert("📊 Slide untuk investor: TAM market jasa rumahan 40M USD, komisi 5-10%, repeat order tinggi. Use case dispute & payment lengkap. Siap rilis beta.");
-    });
-</script>
+        <!-- Use case visual ringkas + diagram sederhana -->
+        <div class="container" id="usecase">
+            <div class="section">
+                <div class="section-title">📋 Use Case Kompleks Siap Eksekusi</div>
+                <div class="usecase-simple">
+                    <div class="role-row">
+                        <div class="role-col">
+                            <h4>🛒 Pelanggan</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Register / Login</li>
+                                <li><i class="fas fa-check-circle"></i> Filter & sort jasa</li>
+                                <li><i class="fas fa-check-circle"></i> Booking & bayar</li>
+                                <li><i class="fas fa-check-circle"></i> Chat & review</li>
+                                <li><i class="fas fa-check-circle"></i> Laporkan masalah</li>
+                            </ul>
+                        </div>
+                        <div class="role-col">
+                            <h4>🔨 Mitra (Penjual)</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Verifikasi KTP/Sertifikat</li>
+                                <li><i class="fas fa-check-circle"></i> Kelola jadwal & harga</li>
+                                <li><i class="fas fa-check-circle"></i> Konfirmasi pesanan</li>
+                                <li><i class="fas fa-check-circle"></i> Update status pekerjaan</li>
+                                <li><i class="fas fa-check-circle"></i> Tarik komisi</li>
+                            </ul>
+                        </div>
+                        <div class="role-col">
+                            <h4>👑 Admin AYA</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Verifikasi mitra</li>
+                                <li><i class="fas fa-check-circle"></i> Blokir pengguna</li>
+                                <li><i class="fas fa-check-circle"></i> Sengketa & refund</li>
+                                <li><i class="fas fa-check-circle"></i> Atur komisi (5-10%)</li>
+                                <li><i class="fas fa-check-circle"></i> Dashboard realtime</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        style="text-align: center; margin-top: 20px; font-size: 14px; background:#0f172a; padding: 16px; border-radius: 28px;">
+                        <i class="fas fa-diagram-project"></i> Lengkap dengan Sequence & Activity Diagram (PlantUML
+                        ready)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="container">
+            <div class="cta">
+                <h2>Siap digitalisasi bisnis jasa Anda bersama AYA?</h2>
+                <p>Bergabunglah sebagai mitra penyedia jasa atau temukan teknisi terbaik di kotamu.</p>
+                <button class="btn-primary" id="investorCta"><i class="fas fa-chart-line"></i> Presentasi untuk Investor
+                    →</button>
+                <p style="margin-top: 20px; font-size: 13px;">✅ Sudah siap MVP | ✅ Use case kompleks | ✅ Sistem dispute
+                    & multi-role</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AYA — All Your Assistance | Platform Jasa Terintegrasi (Admin, Mitra, Pelanggan) | <i
+                    class="fas fa-code"></i> Ready for development</p>
+        </div>
+    </footer>
+
+    <!-- JS untuk demo alert / simulasi -->
+    <script>
+        document.getElementById('demoLoginBtn')?.addEventListener('click', () => {
+            alert("🚀 Demo role AYA:\n\n🔹 Pelanggan: login@pelanggan.aya\n🔹 Mitra: mitra@tukang.aya\n🔹 Admin: admin@aya.id\n\n(Silakan lanjut ke development penuh untuk implementasi auth)");
+        });
+        document.getElementById('registerBtn')?.addEventListener('click', () => {
+            alert("📝 Halaman pendaftaran multi-role (Pelanggan / Mitra Jasa) siap dibangun.\n✅ Use case sudah terdefinisi lengkap.");
+        });
+        document.getElementById('heroOrderBtn')?.addEventListener('click', () => {
+            alert("🔍 Fitur pencarian jasa AYA: filter kategori, lokasi terdekat, rating, harga. \n(Integrasi maps & payment gateway ready di tahap dev)");
+        });
+        document.getElementById('heroJualBtn')?.addEventListener('click', () => {
+            alert("🧑‍🔧 Menjadi mitra AYA: upload layanan, atur jadwal, verifikasi dokumen. Komisi transparan 5-10%.");
+        });
+        document.getElementById('investorCta')?.addEventListener('click', () => {
+            alert("📊 Slide untuk investor AYA:\n\n• TAM market jasa rumahan Indonesia: $4.2M\n• Komisi 5-10%, repeat order tinggi\n• Use case dispute & payment gateway lengkap\n• Siap rilis beta Q3 2026");
+        });
+    </script>
 
 </body>
+
 </html>
