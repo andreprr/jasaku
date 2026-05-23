@@ -20,7 +20,7 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #fefefe;
+            background: #ffffff;
             color: #1f2937;
             scroll-behavior: smooth;
         }
@@ -42,22 +42,75 @@
             gap: 20px;
         }
 
-        .logo {
+        /* ============ TEMPAT LOGO RESPONSIVE ============ */
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        /* Tempat untuk gambar logo - RESPONSIVE */
+        .logo-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-image img {
+            height: auto;
+            width: auto;
+            max-height: 52px;
+            max-width: 200px;
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive logo untuk tablet */
+        @media (max-width: 768px) {
+            .logo-image img {
+                max-height: 44px;
+                max-width: 160px;
+            }
+        }
+
+        /* Responsive logo untuk mobile */
+        @media (max-width: 480px) {
+            .logo-image img {
+                max-height: 38px;
+                max-width: 140px;
+            }
+        }
+
+        /* Tempat untuk teks logo (jika tidak pakai gambar) */
+        .logo-text {
             font-size: 28px;
             font-weight: 800;
-            background: linear-gradient(135deg, #f97316, #dc2626);
+            background: linear-gradient(135deg, #1F3555, #3a5a7c);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             letter-spacing: -0.5px;
+            text-decoration: none;
         }
 
-        .logo span {
+        .logo-text span {
             background: none;
-            color: #f97316;
+            color: #1F3555;
             -webkit-background-clip: unset;
             background-clip: unset;
         }
+
+        /* Divider pemisah logo gambar dan teks (opsional) */
+        .logo-divider {
+            width: 1px;
+            height: 30px;
+            background: #e5e7eb;
+            margin: 0 4px;
+        }
+
+        /* ==================================== */
 
         .nav-links {
             display: flex;
@@ -69,32 +122,32 @@
         .nav-links a {
             text-decoration: none;
             font-weight: 500;
-            color: #374151;
+            color: #4b5563;
             transition: 0.2s;
         }
 
         .nav-links a:hover {
-            color: #f97316;
+            color: #1F3555;
         }
 
         .btn-outline {
-            border: 2px solid #f97316;
+            border: 2px solid #1F3555;
             background: transparent;
             padding: 8px 20px;
             border-radius: 40px;
             font-weight: 600;
-            color: #f97316;
+            color: #1F3555;
             transition: 0.2s;
             cursor: pointer;
         }
 
         .btn-outline:hover {
-            background: #f97316;
+            background: #1F3555;
             color: white;
         }
 
         .btn-primary {
-            background: #f97316;
+            background: #1F3555;
             border: none;
             padding: 10px 24px;
             border-radius: 40px;
@@ -102,11 +155,11 @@
             color: white;
             cursor: pointer;
             transition: 0.2s;
-            box-shadow: 0 4px 6px rgba(249, 115, 22, 0.2);
+            box-shadow: 0 4px 6px rgba(31, 53, 85, 0.2);
         }
 
         .btn-primary:hover {
-            background: #ea580c;
+            background: #2a466e;
             transform: translateY(-2px);
         }
 
@@ -129,15 +182,16 @@
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 20px;
+            color: #1F3555;
         }
 
         .hero-text .highlight {
-            color: #f97316;
+            color: #f59e0b;
         }
 
         .hero-text p {
             font-size: 18px;
-            color: #4b5563;
+            color: #6b7280;
             margin-bottom: 32px;
             max-width: 550px;
         }
@@ -153,12 +207,6 @@
             text-align: center;
         }
 
-        .hero-image img {
-            max-width: 100%;
-            border-radius: 32px;
-            box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.1);
-        }
-
         /* categories */
         .section {
             padding: 70px 0;
@@ -169,6 +217,7 @@
             font-size: 34px;
             font-weight: 800;
             margin-bottom: 16px;
+            color: #1F3555;
         }
 
         .section-sub {
@@ -188,32 +237,33 @@
             padding: 28px 16px;
             text-align: center;
             border-radius: 28px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
             transition: all 0.25s;
-            border: 1px solid #f3f4f6;
+            border: 1px solid #f1f5f9;
             cursor: default;
         }
 
         .category-card i {
             font-size: 48px;
-            color: #f97316;
+            color: #1F3555;
             margin-bottom: 16px;
         }
 
         .category-card h3 {
             font-weight: 700;
             margin-bottom: 8px;
+            color: #1F3555;
         }
 
         .category-card p {
             font-size: 13px;
-            color: #6b7280;
+            color: #94a3b8;
         }
 
         .category-card:hover {
             transform: translateY(-6px);
-            border-color: #fed7aa;
-            box-shadow: 0 20px 30px -12px rgba(249, 115, 22, 0.15);
+            border-color: #fcd34d;
+            box-shadow: 0 20px 30px -12px rgba(31, 53, 85, 0.15);
         }
 
         /* fitur utama */
@@ -228,41 +278,49 @@
             background: white;
             border-radius: 28px;
             padding: 32px 24px;
-            border: 1px solid #f3f4f6;
+            border: 1px solid #f1f5f9;
             transition: 0.2s;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
         }
 
         .feature-card i {
             font-size: 40px;
-            background: #fff7ed;
+            background: #fef9e6;
             padding: 12px;
             border-radius: 20px;
-            color: #f97316;
+            color: #1F3555;
             margin-bottom: 20px;
         }
 
         .feature-card h3 {
             margin-bottom: 12px;
+            color: #1F3555;
+        }
+
+        .feature-card p {
+            color: #6b7280;
+            line-height: 1.5;
         }
 
         .role-badge {
             display: inline-block;
-            background: #fee2e2;
+            background: #fef3c7;
             padding: 4px 12px;
             border-radius: 50px;
             font-size: 12px;
             font-weight: 700;
             margin-bottom: 16px;
-            color: #b91c1c;
+            color: #92400e;
         }
 
         /* bagan use case visual ringkas */
         .usecase-simple {
-            background: #111827;
+            background: linear-gradient(135deg, #1F3555 0%, #2a466e 100%);
             color: white;
             border-radius: 40px;
             padding: 40px 32px;
             margin-top: 20px;
+            box-shadow: 0 20px 35px -10px rgba(31, 53, 85, 0.3);
         }
 
         .role-row {
@@ -274,17 +332,24 @@
         }
 
         .role-col {
-            background: #1f2937;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
             border-radius: 28px;
             padding: 24px;
             flex: 1;
             min-width: 200px;
+            transition: 0.2s;
+        }
+
+        .role-col:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
         }
 
         .role-col h4 {
             font-size: 22px;
             margin-bottom: 16px;
-            border-left: 4px solid #f97316;
+            border-left: 4px solid #fcd34d;
             padding-left: 12px;
         }
 
@@ -301,37 +366,49 @@
         }
 
         .role-col i {
-            color: #f97316;
+            color: #fcd34d;
             width: 20px;
         }
 
         /* CTA */
         .cta {
-            background: linear-gradient(110deg, #ffedd5 0%, #fff7ed 100%);
+            background: linear-gradient(110deg, #fef9e6 0%, #fffdf5 100%);
             border-radius: 48px;
             padding: 56px 32px;
             text-align: center;
+            border: 1px solid #fef3c7;
         }
 
         .cta h2 {
             font-size: 32px;
             margin-bottom: 16px;
+            color: #1F3555;
+        }
+
+        .cta p {
+            color: #6b7280;
         }
 
         .cta .btn-primary {
             margin-top: 20px;
             font-size: 18px;
             padding: 14px 36px;
+            background: #1F3555;
+        }
+
+        .cta .btn-primary:hover {
+            background: #2a466e;
         }
 
         footer {
             text-align: center;
             padding: 40px 0;
-            border-top: 1px solid #e5e7eb;
-            color: #6b7280;
+            border-top: 1px solid #f1f5f9;
+            color: #94a3b8;
             font-size: 14px;
         }
 
+        /* Responsive navbar */
         @media (max-width: 768px) {
             .hero-text h1 {
                 font-size: 36px;
@@ -339,6 +416,65 @@
 
             .navbar {
                 flex-direction: column;
+                text-align: center;
+            }
+
+            .logo-area {
+                justify-content: center;
+            }
+
+            .nav-links {
+                justify-content: center;
+            }
+
+            .hero {
+                text-align: center;
+            }
+
+            .hero-text p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+        }
+
+        /* Responsive untuk mobile kecil */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero-text h1 {
+                font-size: 28px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .btn-primary,
+            .btn-outline {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+
+            .feature-card {
+                padding: 24px 20px;
+            }
+
+            .usecase-simple {
+                padding: 24px 20px;
+            }
+
+            .role-col h4 {
+                font-size: 18px;
             }
         }
     </style>
@@ -348,7 +484,13 @@
 
     <nav class="container">
         <div class="navbar">
-            <div class="logo"><i class="fas fa-hands-helping"></i> AYA<span>.</span></div>
+            <!-- ============ TEMPAT LOGO RESPONSIVE ============ -->
+            <div class="logo-area">
+                <div class="logo-image">
+                    <img src="5.png" alt="Logo AYA">
+                </div>
+            </div>
+
             <div class="nav-links">
                 <a href="#">Beranda</a>
                 <a href="#fitur">Fitur</a>
@@ -372,17 +514,17 @@
                         <button class="btn-primary" id="heroOrderBtn"><i class="fas fa-search"></i> Cari Jasa</button>
                         <button class="btn-outline" id="heroJualBtn">Jadi Mitra Penyedia →</button>
                     </div>
-                    <div style="margin-top: 24px; font-size: 14px; color: #4b5563;">
-                        <i class="fas fa-check-circle" style="color:#f97316;"></i> 750+ teknisi terverifikasi
-                        <i class="fas fa-check-circle" style="color:#f97316; margin-left: 16px;"></i> Garansi 100% puas
+                    <div style="margin-top: 24px; font-size: 14px; color: #6b7280;">
+                        <i class="fas fa-check-circle" style="color:#1F3555;"></i> 750+ teknisi terverifikasi
+                        <i class="fas fa-check-circle" style="color:#1F3555; margin-left: 16px;"></i> Garansi 100% puas
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div style="background: #ffedd5; border-radius: 32px; padding: 20px;">
-                        <i class="fas fa-hard-hat" style="font-size: 120px; color:#f97316;"></i>
-                        <i class="fas fa-wrench" style="font-size: 90px; color:#ea580c; margin-left: 10px;"></i>
-                        <i class="fas fa-fan" style="font-size: 100px; color:#f97316;"></i>
-                        <p style="margin-top: 12px;">⭐ 4.9 dari 3.200+ ulasan</p>
+                    <div style="background: #fef9e6; border-radius: 32px; padding: 20px;">
+                        <i class="fas fa-hard-hat" style="font-size: 120px; color:#1F3555;"></i>
+                        <i class="fas fa-wrench" style="font-size: 90px; color:#fcd34d; margin-left: 10px;"></i>
+                        <i class="fas fa-fan" style="font-size: 100px; color:#1F3555;"></i>
+                        <p style="margin-top: 12px; color: #6b7280;">⭐ 4.9 dari 3.200+ ulasan</p>
                     </div>
                 </div>
             </div>
@@ -422,7 +564,7 @@
             </div>
         </div>
 
-        <!-- Fitur Multi Role (Admin, Penjual, Pembeli) -->
+        <!-- Fitur Multi Role -->
         <div class="container" id="fitur">
             <div class="section">
                 <div class="section-title">🏢 Ekosistem Lengkap 3 Role</div>
@@ -448,7 +590,7 @@
             </div>
         </div>
 
-        <!-- Use case visual ringkas + diagram sederhana -->
+        <!-- Use case visual -->
         <div class="container" id="usecase">
             <div class="section">
                 <div class="section-title">📋 Use Case Kompleks Siap Eksekusi</div>
@@ -486,7 +628,7 @@
                         </div>
                     </div>
                     <div
-                        style="text-align: center; margin-top: 20px; font-size: 14px; background:#0f172a; padding: 16px; border-radius: 28px;">
+                        style="text-align: center; margin-top: 20px; font-size: 14px; background: rgba(255,255,255,0.1); padding: 16px; border-radius: 28px;">
                         <i class="fas fa-diagram-project"></i> Lengkap dengan Sequence & Activity Diagram (PlantUML
                         ready)
                     </div>
@@ -501,8 +643,8 @@
                 <p>Bergabunglah sebagai mitra penyedia jasa atau temukan teknisi terbaik di kotamu.</p>
                 <button class="btn-primary" id="investorCta"><i class="fas fa-chart-line"></i> Presentasi untuk Investor
                     →</button>
-                <p style="margin-top: 20px; font-size: 13px;">✅ Sudah siap MVP | ✅ Use case kompleks | ✅ Sistem dispute
-                    & multi-role</p>
+                <p style="margin-top: 20px; font-size: 13px; color: #94a3b8;">✅ Sudah siap MVP | ✅ Use case kompleks | ✅
+                    Sistem dispute & multi-role</p>
             </div>
         </div>
     </main>
@@ -514,7 +656,6 @@
         </div>
     </footer>
 
-    <!-- JS untuk demo alert / simulasi -->
     <script>
         document.getElementById('demoLoginBtn')?.addEventListener('click', () => {
             alert("🚀 Demo role AYA:\n\n🔹 Pelanggan: login@pelanggan.aya\n🔹 Mitra: mitra@tukang.aya\n🔹 Admin: admin@aya.id\n\n(Silakan lanjut ke development penuh untuk implementasi auth)");
